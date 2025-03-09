@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Dev Board</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="container">
-    <header>
-      <nav class="flex justify-between">
-        <div class="flex items-center">
-          <img src="./style/assets/logo.png" alt="" />
-          <h1 class="text-4xl">Dev<span class="font-bold">Board</span</h1>
-        </div>
-        <div class="flex">
-            <div>
-                <img src="./style/assets/checkbox.png" alt="">
-
+  <body class="container bg-[#F4F7FF]">
+    <header class="">
+      <nav class="flex justify-between items-center mt-6 bg-white rounded-2xl">
+          <div class="flex items-center">
+            <img src="./style/assets/logo.png" alt="" />
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span</h1>
+          </div>
+          <div class="flex justify-around gap-8">
+            <div class="flex h-8 gap-2 rounded-3xl bg-[#F4F7FF] rounded-3xl"> 
+              <img src="./style/assets/checkbox.png" alt="">
+              <div class="text-4xl font-bold">24</div>
             </div>
-            <img src="./style/assets/theme-btn.png" alt="">
-        </div>
+            <div class="bg-[#F4F7FF] rounded-full">
+              <img src="./style/assets/theme-btn.png" alt="">
+            </div>
+          </div>
       </nav>
     </header>
-
     <script src="./js/dev.js"></script>
   </body>
 </html>
