@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="container bg-[#F4F7FF]">
+  <body id="bg-color" class="container bg-[#F4F7FF]">
     <header class="my-6">
       <nav class="flex justify-between items-center bg-white rounded-2xl p-6">
           <div class="flex items-center justify-center">
@@ -20,7 +20,7 @@
               <div id="check-task" class="text-4xl font-bold">24</div>
             </div>
             <div class="bg-[#F4F7FF] rounded-full p-2">
-              <img src="./style/assets/theme-btn.png" alt="">
+              <img id="colorButton" src="./style/assets/theme-btn.png" alt="">
             </div>
           </div>
       </nav>
@@ -142,7 +142,7 @@
               <img src="./style/assets/activity.png" alt="">
               <p class="font-medium text-xl">Activity Log</p>
             </div>
-            <button class="bg-blue-700 rounded-lg text-white p-3 ">Clear History</button>
+            <button id="clear-history" class="bg-blue-700 rounded-lg text-white p-3 ">Clear History</button>
           </div>
 
         </div>

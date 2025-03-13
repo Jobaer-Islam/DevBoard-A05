@@ -4,9 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1>Hey?</h1>
+  <body id="bg-color" class="container bg-[#F4F7FF]">
+    <header class="my-6">
+      <nav class="flex justify-between items-center bg-white rounded-2xl p-6">
+          <div class="flex items-center justify-center">
+            <img src="./style/assets/logo.png" alt="" />
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span</h1>
+          </div>
+          <div class="flex justify-around gap-8">
+           
+            <div>
+              <button id="back-desk" class="bg-blue-700 rounded-lg text-white p-3 btn-complete cursor-pointer">Bact to Desk</button>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="bg-white p-4 rounded-lg mb-5">
+        <h2 class="font-bold p-2">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <hr>
+      <p class="p-4">
+        1. getElementById(id) <br>
+        
+        2. getElementsByClassName(className) <br>
+        
+        3. getElementsByTagName(tagName) <br>
+        
+        4. querySelector(selector) <br>
+        
+        5. querySelectorAll(selector) <br>
+        
+        </p>
+      </div>
+      <div class="bg-white p-4 rounded-lg mb-5">
+        <h2 class="font-bold p-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+        <hr>
+      <p class="p-4">
+        innerHTML: accesses or modifies an element's HTML content, including tags. <br> innerText: deals with visible, styled text, excluding hidden elements. <br> textContent: retrieves or sets all text content, ignoring styling, making it faster and suitable for raw text manipulation. 
+        </p>
+      </div>
+      <div class="bg-white p-4 rounded-lg mb-5">
+        <h2 class="font-bold p-2">Question-3: What is event delegation in the DOM?
+
+        </h2>
+        <hr>
+      <p class="p-4">
+        Event delegation in the DOM is a technique where a single event listener is attached to a parent element to manage events from multiple child elements. This method leverages event bubbling, where events initiated by child elements propagate up to their parent, allowing for centralized event handling. It reduces the number of event listeners needed, improves performance, and simplifies management of dynamic content. By using event delegation, applications can handle events for newly added elements automatically without the need to attach specific listeners to each child.
+      </div>
+      <div class="bg-white p-4 rounded-lg mb-5">
+        <h2 class="font-bold p-2">Question-4: What is event bubbling in the DOM?
+        </h2>
+        <hr>
+      <p class="p-4">
+        Event bubbling in the DOM is a process where an event initiated on a specific element propagates upwards through its parent elements. This mechanism allows a single event handler on a higher-level parent to respond to events triggered on its child elements, facilitating simplified and efficient event management, especially in dynamic interfaces. This behavior is foundational for implementing event delegation, where events are handled at a communal ancestor rather than at individual descendant elements.
+      </div>
+      <div class="bg-white p-4 rounded-lg mb-5">
+        <h2 class="font-bold p-2">Question-5: How do you create, add, and remove elements using JavaScript?
+        </h2>
+        <hr>
+      <p class="p-4">
+        1. Creating an Element <br>
+        let newDiv = document.createElement('div'); <br> <br>
+        2. Adding an Element <br>
+        document.body.appendChild(newDiv); <br> <br>
+        3. Removing an Element <br>
+        let elementToRemove = document.getElementById('elementId'); <br>
+        elementToRemove.remove(); 
+
+
+
+
+
+      </div>
+    </main>
   </body>
 </html>
