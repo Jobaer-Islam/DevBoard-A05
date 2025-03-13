@@ -10,6 +10,7 @@ let minutes = date.getMinutes();
 let seconds = date.getSeconds();
 
 
+
 for (const button of buttons) {
     button.addEventListener('click', function () {
 
@@ -34,18 +35,18 @@ for (const button of buttons) {
 
             transaction.appendChild(p);
 
+            document.querySelector("#clear-history").addEventListener("click", function () {
+                p.innerText = ' '
+
+            })
+
 
         }
-
-
-
 
     })
 }
 
-document.getElementById("clear-history").addEventListener("click", function () {
-    transaction.innerHTML = "";
-})
+
 
 const theme = document.getElementById('colorButton');
 let bgTheme = document.getElementById("bg-color");
@@ -68,8 +69,6 @@ document.getElementById("discover-card").addEventListener("click", function () {
 });
 
 
-document.getElementById("back-desk").addEventListener("click", function () {
-    window.location.href = "index.html";
-});
+
 
 
